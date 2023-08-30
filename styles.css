@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(232, 218, 8);
+  background: -moz-linear-gradient(
+    to left top,
+    rgb(8, 232, 146) 0%,
+    rgba(123, 210, 231, 1) 35%,
+    rgb(8, 232, 146) 100%
+  );
+  background: -webkit-linear-gradient(
+    to left top,
+    rgb(8, 232, 146) 0%,
+    rgba(123, 210, 231, 1) 35%,
+    rgb(8, 232, 146) 100%
+  );
+  background: linear-gradient(
+    to left top,
+    rgb(8, 232, 146) 0%,
+    rgba(123, 210, 231, 1) 35%,
+    rgb(8, 232, 146) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8da08",endColorstr="#e8da08",GradientType=1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  color: darkcyan;
+  text-align: center;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 85%;
+  max-width: 450px;
+}
+h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+input {
+  width: 220px;
+  font-family: monospace;
+  padding: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: darkgreen;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+@media (width <= 480px) {
+  .input-container {
+    flex-direction: column;
+  }
+}
